@@ -1,0 +1,268 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <title>Hostel_Hub</title>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <!--Logo-->
+        <h1 class="logo">HostelHub</h1>
+
+        <!--list of menus-->
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="#"><ion-icon name="Wallet-outline"></ion-icon>Wallet</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Setting</a>
+        </div>
+
+        <!--logout-->
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log out-outline"></ion-icon>Logout</a>
+        </div>
+    </div>
+
+    <!--main-->
+    <div class="main">
+        <!--main navbar-->
+        <div class="main-navbar">
+            <!--menu when appear on mobile version-->
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+            <!-- Search bar -->
+            <div class="Search">
+                <input type="text" placeholder="Where you want to stay?">
+                <button class="Search-btn">Search</button>
+            </div>
+            <!-- profile icon on left side of navbar -->
+            <div class="profile">
+                <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+        </div>
+
+        <!--main highlight-->
+        <div class="main-highlight">
+
+            <!--title section and arrow-->
+            <div class="main-header">
+                <h2 class="main-title">Recommendations</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+
+            <!--highlight of room-->
+            <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img class="highlight-img" src="assets/1R.jpeg">
+                    <div class="highlight-desc">
+                        <h4>Single</h4>
+                        <p>₹1,000/-</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="assets/2R.jpg">
+                    <div class="highlight-desc">
+                        <h4>Double</h4>
+                        <p>₹2,000/-</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="assets/3R.jpg">
+                    <div class="highlight-desc">
+                        <h4>Triple</h4>
+                        <p>₹3,000/-</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="assets/4R.jpeg">
+                    <div class="highlight-desc">
+                        <h4>More</h4>
+                        <p>₹5,000/-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--All service -->
+        <div class="main-menus">
+            <!--filter section-->
+            <div class="main-filter">
+                <div>
+                    <h2 class="main-title">Facilities <br>Provided</h2>
+                    <div class="main-arrow">
+                        <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                        <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="grid-outline"></ion-icon>
+                        </div>
+                        <p>All service</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </div>
+                        <p>Home</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="bed-outline"></ion-icon>
+                        </div>
+                        <p>Bed</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="tablet-landscape-sharp"></ion-icon>
+                        </div>
+                        <p>Table</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="pint-outline"></ion-icon>
+                        </div>
+                        <p>chair</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </div>
+                        <p>Almirah</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="battery-charging"></ion-icon>
+                        </div>
+                        <p>Charging Point</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="git-commit-outline"></ion-icon>
+                        </div>
+                        <p>Fan</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="wifi-outline"></ion-icon>
+                        </div>
+                        <p>Wifi</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider">
+            <!-- list of Room -->
+            <div class="main-detail">
+                <h2 class="main-title">Choose Room</h2>
+                <div class="rooms-container">
+                    <div class="detail-card">
+                        <img class="detail-img" src="assets/1R.jpeg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Single Room</h4>
+                                <p class="detail-sub">A single room provided with a bed, a table and a chair with a almirah.</p>
+                                <p class="price">₹800/-</p>
+                            </div>
+                        <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="assets/2R.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Double Room</h4>
+                            <p class="detail-sub">A room provided with two bed, two table, two chair with almirah.</p>
+                            <p class="price">₹1500/-</p>
+                        </div>
+                        <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="assets/3R.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Quad</h4>
+                            <p class="detail-sub">A room provided with four bed, table, chair with almirah.</p>
+                            <p class="price">₹3000/-</p>
+                        </div>
+                        <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="assets/4R.jpeg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Hall</h4>
+                            <p class="detail-sub">A room provided with more than four bed, table, chair with almirah.</p>
+                            <p class="price">₹500/- each Bed</p>
+                        </div>
+                        <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="assets/2RR.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Adjacent Bed</h4>
+                            <p class="detail-sub">A room provided with two bed, table, chair with almirah.</p>
+                            <p class="price">₹1500/-</p>
+                        </div>
+                        <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="assets/3RR.png">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Triple</h4>
+                            <p class="detail-sub">A room provided with three bed, table, chair with almirah.</p>
+                            <p class="price">₹2400/-</p>
+                        </div>
+                        <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="assets/2.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Single</h4>
+                            <p class="detail-sub">A room provided with single bed, table, chair with almirah.</p>
+                            <p class="price">₹800/-</p>
+                        </div>
+                        <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="assets/3.JPG">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Squad</h4>
+                            <p class="detail-sub">A room provided with bed, table, chair with almirah.</p>
+                            <p class="price">₹1000/-</p>
+                        </div>
+                        <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+
+<!-- adding javascript-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</html>
